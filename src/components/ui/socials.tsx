@@ -52,7 +52,7 @@ const Socials = ({className, ...props} : {
           variants={socialItemsVariants}
         />
       ))}
-      <button className="absolute right-full top-0 bg-white rounded block w-fit p-2" onClick={toggleOpen}><IoShareSocialOutline  className="text-black w-6 h-6"/></button>
+      <button className="absolute right-full top-0 bg-white rounded block w-fit p-2" onClick={() => toggleOpen()}><IoShareSocialOutline  className="text-black w-6 h-6"/></button>
     </motion.div>
   );
 }

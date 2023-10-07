@@ -8,7 +8,7 @@ interface ExperienceProps {
   children: string;
 }
 const ExperienceItem = ({startDate, endDate, title, children}: ExperienceProps) => {
-  const options = {month: 'long', year: 'numeric'};
+  const options = {month: 'long', year: 'numeric'} as const;
   const dateTimeFormat = new Intl.DateTimeFormat('en', options);
   let formattedDate = null;
   if (endDate) {
