@@ -2,6 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
 import Navbar from "@/components/navbar";
+import Socials from "@/components/ui/socials";
+import Footer from "@/components/ui/footer";
 const worksans = Work_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,11 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={worksans.className}>
+      <body>
         <header>
           <Navbar />
+          <Socials className="fixed right-0 top-12 mt-8 flex flex-col gap-4 filter backdrop-blur-sm z-10" />
         </header>
         {children}
+        <Footer />
       </body>
     </html>
   );
