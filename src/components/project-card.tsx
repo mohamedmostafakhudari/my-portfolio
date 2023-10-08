@@ -4,6 +4,7 @@ import { BsEye } from "react-icons/bs";
 import { BiCodeAlt } from "react-icons/bi";
 import { TypographyH4 } from "@/components/ui/typography";
 import { TypographySmall } from "@/components/ui/typography";
+import Image from 'next/image';
 interface ProjectCardTypes {
   name: string;
   desc: string;
@@ -15,8 +16,8 @@ interface ProjectCardTypes {
 const ProjectCard = ({name, desc, thumbnailSrc, demoHref, githubHref} : ProjectCardTypes) => {
   return (
     <div className="flex flex-col overflow-hidden rounded-[6px_6px_0_0]">
-      <div className="relative">
-        <img src={thumbnailSrc} alt={desc} className='w-full object-cover object-center'/>
+      <div className="relative flex-1 min-h-[20rem]">
+        <Image src={thumbnailSrc} width={250} height={400} alt={desc} className="object-cover object-center w-full h-full"/>
         <div className="absolute inset-0 grid cursor-pointer place-items-center bg-gradient-to-r from-primary/50 to-[hsl(15_70%_49%_/50%)] opacity-0 duration-200 ease-in-out hover:opacity-100">
           <div className="">
             <Icon IconComp={BsEye} href={demoHref} />

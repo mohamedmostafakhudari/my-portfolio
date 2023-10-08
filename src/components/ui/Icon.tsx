@@ -13,7 +13,7 @@ interface propTypes {
 }
 function Icon({ IconComp, href, className, ...props }: propTypes) {
   return (
-    <motion.a href={href} whileHover={{scale: 1.1}} className={cn("block h-6 w-6", className)} {...props}>
+    <motion.a href={href} whileHover={{scale: 1.1}} target="_blank" className={cn("block h-6 w-6", className)} {...props}>
       <IconComp className={"h-full w-full"} />
     </motion.a>
   );

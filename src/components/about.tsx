@@ -14,6 +14,7 @@ const About = () => {
       <div className="container flex flex-col gap-16 md:flex-row">
         <motion.div initial="hidden" whileInView="show" viewport={{
           amount: 0.8,
+          once: true,
         }} variants={sectionVariants} className="flex-1">
           <div>
             <TypographyH2>About Me</TypographyH2>
