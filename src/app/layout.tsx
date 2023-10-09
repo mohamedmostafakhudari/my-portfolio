@@ -18,13 +18,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* This line is for temporary situation and would be removed later */}
-      <head>
-        <meta
-          http-equiv="refresh"
-          content="1;url=https://mohamed-mostafa.vercel.app/"
-        />
-      </head>
       <body>
         <header>
           <Navbar />
