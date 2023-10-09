@@ -13,7 +13,7 @@ import { AiOutlineCalendar, AiOutlineHome } from "react-icons/ai";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { randomIndex } from '@/lib/utils';
 async function getQuotes() {
-  const res = await fetch("https://type.fit/api/quotes");
+  const res = await fetch("https://type.fit/api/quotes", { cache: "no-store" });
 
   if (!res.ok) {
     throw new Error('Failed to fetch data');
