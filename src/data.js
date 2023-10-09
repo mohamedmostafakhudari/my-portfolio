@@ -6,27 +6,31 @@ const skills = [
   },
   {
     title: "Tailwind Css",
-    progressValue: 90,
+    progressValue: 100,
   },
   {
     title: "NextJS 13",
-    progressValue: 90,
+    progressValue: 60,
+  },
+  {
+    title: "TypeScript",
+    progressValue: 60,
   },
   {
     title: "Svelte",
-    progressValue: 90,
+    progressValue: 70,
   },
   {
     title: "Styled Components",
-    progressValue: 90,
+    progressValue: 70,
   },
   {
     title: "Express",
-    progressValue: 90,
+    progressValue: 70,
   },
   {
     title: "MongoDB & Mongoose",
-    progressValue: 90,
+    progressValue: 70,
   },
 ];
 

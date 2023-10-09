@@ -12,23 +12,35 @@ const About = () => {
   return (
     <section id="about" className="py-24 md:pt-64">
       <div className="container flex flex-col gap-16 md:flex-row">
-        <motion.div initial="hidden" whileInView="show" viewport={{
-          amount: 0.8,
-          once: true,
-        }} variants={sectionVariants} className="flex-1">
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{
+            amount: 0.8,
+            once: true,
+          }}
+          variants={sectionVariants}
+          className="flex-1"
+        >
           <div>
             <TypographyH2>About Me</TypographyH2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos obcaecati laboriosam vitae esse, expedita sunt velit
-              inventore nesciunt quia vero incidunt, ad ea autem molestias
-              quibusdam, dolore deserunt eius dicta consequuntur laborum sequi
-              aut labore. Velit maxime nisi magnam? Vel?
+              Hi, I&apos;m Mohamed, a passionate front-end web developer based
+              in Egypt. I&apos;m a self-learner, I&apos;ve to admit that this is
+              the hard route to learn stuff, but I say wherever passion is,
+              there you will find success. Learning everyday and putting the
+              work has given me a great diverse skill-set in different
+              technologies which allows me to provide a professional custom web
+              development solutions. I believe that my work is a reflection of
+              myself, therefore my philosophy is &ldquo;Quality First&rdquo;. In
+              my free time I like to do sports, reading books, you can find me
+              surfing the web, hanging out on social media, or hiding in a bush
+              in Fortnite 😁.
             </p>
           </div>
           <Link
-            href="./pdf-template-referral-fee-agreement-template.pdf"
-            download="pdf-template-referral-fee-agreement-template"
+            href="./mohamed-mostafa-resume.pdf"
+            download="mohamed-mostafa-resume"
             target="_blank"
             rel="noreferrer"
             className="mt-6 flex w-fit items-center gap-2 rounded bg-gradient-primary p-2 px-4"
