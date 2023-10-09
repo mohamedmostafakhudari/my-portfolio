@@ -12,18 +12,9 @@ import { typingVariants } from "@/lib/animations";
 import { AiOutlineCalendar, AiOutlineHome } from "react-icons/ai";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { randomIndex } from '@/lib/utils';
-async function getQuotes() {
-  const res = await fetch("https://type.fit/api/quotes", { cache: "no-store" });
 
-  if (!res.ok) {
-    throw new Error('Failed to fetch data');
-  }
-
-  return res.json();
-}
-const Hero = async () => {
-  const quotes = await getQuotes();
-  const quoteOfTheDay = quotes[randomIndex(quotes.length)]
+const Hero = () => {
+  
   return (
     <section id="hero" className="bg-gradient-primary py-24 md:pt-0">
       <div className="container">
@@ -48,12 +39,7 @@ const Hero = async () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col gap-8 sm:flex-row md:max-w-[45ch] md:flex-col">
-              <blockquote>
-                <p className='before:content-["\201C"] after:content-["\201D"]'>
-                  {quoteOfTheDay.text}
-                </p>
-                <footer>_{quoteOfTheDay.author.slice(0,quoteOfTheDay.author.indexOf(',')+1)}</footer>
-              </blockquote>
+              <p>In this digital revolution era, everyone deserves to have his/her own spot on the web. I&apos;m here to collaporate with you to make your vision true, and to make your digital spot an attractive and efficient place.</p>
               <ul className="space-y-2">
                 <li className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
                   <div>

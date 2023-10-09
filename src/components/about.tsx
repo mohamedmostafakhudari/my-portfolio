@@ -25,7 +25,7 @@ const About = () => {
           <div>
             <TypographyH2>About Me</TypographyH2>
             <p>
-              Hi, I&apos;m Mohamed, a passionate front-end web developer based
+              Hi, I&apos;m Mohamed, a passionate and competent front-end web developer based
               in Egypt. I&apos;m a self-learner, I&apos;ve to admit that this is
               the hard route to learn stuff, but I say wherever passion is,
               there you will find success. Learning everyday and putting the
