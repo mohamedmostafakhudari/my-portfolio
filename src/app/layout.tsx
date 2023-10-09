@@ -18,10 +18,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      {/* This line is for temporary situation and would be removed later */}
+      <head>
+        <meta
+          http-equiv="refresh"
+          content="1;url=https://mohamed-mostafa.vercel.app/"
+        />
+      </head>
       <body>
         <header>
           <Navbar />
-          <Socials className="fixed right-0 top-12 mt-8 flex flex-col gap-4 filter backdrop-blur-sm z-10" />
+          <Socials className="fixed right-0 top-12 z-10 mt-8 flex flex-col gap-4 filter backdrop-blur-sm" />
         </header>
         {children}
         <Footer />
