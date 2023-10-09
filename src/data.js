@@ -89,5 +89,37 @@ const projects = {
     },
   ],
 };
+const experiences = [
+  {
+    title: "A Web Development Bootcamp by Dr.Angela",
+    bullets: [
+      "Strengthened the fundamentals to an impressive degree.",
+      "Built several projects including ones with Express server and MongoDB database integrated.",
+      "Learned a lot about Authentication methods ranging from simple ones to mroe complex ones like crypto, passport and OAuth.",
+    ],
+    startDate: new Date(Date.UTC(2023, 8, 1)),
+    endDate: new Date(Date.UTC(2023, 9, 1)),
+  },
+  {
+    title:
+      "A Nano Degree Front-End Web Development Program Sponsered By MCIT of Egypt",
+    bullets: [
+      "Completed an extensive curriculum which involved many critical aspects in the field.",
+      "Worked on graduate projects with a deadline which taught me much about time management and prioritization skills.",
+    ],
+    startDate: new Date(Date.UTC(2022, 1, 1)),
+    endDate: new Date(Date.UTC(2022, 8, 1)),
+  },
+  {
+    title:
+      "The Odin Project Full Stack Curriculum",
+    bullets: [
+      "An open source community with lots of amazing collaporators of different experience levels brought together this curriculum of the brightest educational articales on the internet.",
+      "It embraces the \"Learn By Doing\" methodology. This was the start point in my career to transition my passion for Programming from just a hobby to a professional level and a serious life-long commitment.",
+    ],
+    startDate: new Date(Date.UTC(2022, 1, 1)),
+    endDate: new Date(Date.UTC(2023, 1, 1)),
+  },
+];
 
-export { skills, projects };
+export { skills, projects, experiences };

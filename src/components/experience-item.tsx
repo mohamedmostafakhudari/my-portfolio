@@ -1,11 +1,14 @@
+"use client";
 import React from 'react'
 import { MotionDiv } from '@/app/use-client';
 import { TypographyH3 } from '@/components/ui/typography';
+import { cn } from '@/lib/utils';
+import { motion } from 'framer-motion';
 interface ExperienceProps {
   startDate: Date;
   endDate?: Date;
   title: string;
-  children: string;
+  children: React.ReactNode;
 }
 const ExperienceItem = ({startDate, endDate, title, children}: ExperienceProps) => {
   const options = {month: 'long', year: 'numeric'} as const;
@@ -19,9 +22,9 @@ const ExperienceItem = ({startDate, endDate, title, children}: ExperienceProps) 
     formattedDate = dateTimeFormat.format(startDate);
   }
   return (
-    <div className="flex items-center">
-      <div className="relative mr-12 grid min-h-[160px] flex-1 place-items-center border-r-4 border-white/30 px-6 py-20">
-        {formattedDate} {!endDate && 'to present'}
+    <div className={cn("flex items-center", startDate.getFullYear() === endDate?.getFullYear() && "ml-6")}>
+      <div className="relative mr-12 min-h-[160px] flex-1 place-items-center border-r-4 border-white/30 px-6 py-[8rem]">
+        {formattedDate} {!endDate && "to present"}
         {/* bullet */}
         <div className="absolute right-0 top-1/2 h-2 w-2 -translate-y-1/2 translate-x-[6px] rounded-full bg-white">
           <MotionDiv
@@ -43,11 +46,27 @@ const ExperienceItem = ({startDate, endDate, title, children}: ExperienceProps) 
           ></MotionDiv>
         </div>
       </div>
-      <div className="grid flex-1 items-center space-y-6 max-w-[35ch]">
-        <TypographyH3>{title}</TypographyH3>
-        <p>
-          {children}
-        </p>
+      <div className="group h-[300px] min-w-[42ch] items-center space-y-6 overflow-x-hidden overflow-y-clip bg-transparent">
+        <motion.div
+          data-card='inner'
+          className="relative h-full w-full duration-300 ease-in-out group-hover:[transform:rotateY(180deg)]"
+          style={{ transformStyle: "preserve-3d" }}
+        >
+          <div
+            data-card="front"
+            className="absolute p-4 min-h-full w-full bg-background grid place-items-center rounded-lg text-center"
+            style={{ backfaceVisibility: "hidden" }}
+          >
+            <TypographyH3>{title}</TypographyH3>
+          </div>
+          <div
+            data-card='back'
+            className="absolute p-4 min-h-full text-sm w-full bg-white text-background rounded-lg overflow-hidden [transform:rotateY(180deg)]"
+            style={{ backfaceVisibility: "hidden" }}
+          >
+            {children}
+          </div>
+        </motion.div>
       </div>
     </div>
   );

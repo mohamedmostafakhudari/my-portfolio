@@ -1,6 +1,5 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -77,10 +76,13 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       gridTemplateColumns: {
-        "auto-fill": "repeat(auto-fill,minmax(min(100%,var(--max-width,250px)),1fr))",
-      }
+        "auto-fill":
+          "repeat(auto-fill,minmax(min(100%,var(--max-width,250px)),1fr))",
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("./plugins/additional-plugins.js"),
+  ],
 };
-export default config;
