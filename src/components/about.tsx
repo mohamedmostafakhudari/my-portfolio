@@ -25,17 +25,19 @@ const About = () => {
           <div>
             <TypographyH2>About Me</TypographyH2>
             <p>
-              Hi, I&apos;m Mohamed, a passionate and competent front-end web developer based
-              in Egypt. I&apos;m a self-learner, I&apos;ve to admit that this is
-              the hard route to learn stuff, but I say wherever passion is,
-              there you will find success. Learning everyday and putting the
-              work has given me a great diverse skill-set in different
-              technologies which allows me to provide a professional custom web
-              development solutions. I believe that my work is a reflection of
-              myself, therefore my philosophy is &ldquo;Quality First&rdquo;. In
-              my free time I like to do sports, reading books, you can find me
-              surfing the web, hanging out on social media, or hiding in a bush
-              in Fortnite 😁.
+              Hi, I&apos;m Mohamed, a passionate and competent front-end web
+              developer based in Egypt. Being self-learn taught me to retrieve
+              my motivation to keep learning new stuff and to keep moving
+              forward from inside without seeking outside validation, as the
+              quote says &ldquo;wherever passion is, there you will find
+              success&rdquo;. Learning everyday and putting the work has given
+              me a great diverse skill-set in different technologies which
+              allows me to provide a professional custom web development
+              solutions. I believe that my work is a reflection of myself,
+              therefore my philosophy is &ldquo;Quality First&rdquo;. In my free
+              time I like to do sports, reading books, you can find me surfing
+              the web, hanging out on social media, or hiding in a bush in
+              Fortnite 😁.
             </p>
           </div>
           <Link
