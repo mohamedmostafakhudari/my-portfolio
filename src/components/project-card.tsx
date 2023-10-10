@@ -12,6 +12,7 @@ interface ProjectCardTypes {
   demoHref: string;
   githubHref: string;
 }
+// ! This solution of manually adding assetPrefix won't work with vercel, consider removing it later ! //
 const isProd = process.env.NODE_ENV === "production";
 
 const ProjectCard = ({name, desc, thumbnailSrc, demoHref, githubHref} : ProjectCardTypes) => {
