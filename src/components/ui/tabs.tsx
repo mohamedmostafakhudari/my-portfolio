@@ -5,7 +5,7 @@ import * as TabsPrimitive from "@radix-ui/react-tabs"
 
 import { cn } from "@/lib/utils"
 import { motion } from 'framer-motion';
-import { projectsContainer, projectsContainerVariants } from "@/lib/animations";
+import { projectsContainer } from "@/lib/animations";
 
 const Tabs = TabsPrimitive.Root
 
