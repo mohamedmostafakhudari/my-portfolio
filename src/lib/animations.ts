@@ -82,3 +82,25 @@ export const sectionVariants = {
     opacity: 1,
   }
 }
+
+export const projectsContainer = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+    }
+  }
+}
+export const projectCard = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+  }
+}

@@ -5,6 +5,8 @@ import { BiCodeAlt } from "react-icons/bi";
 import { TypographyH4 } from "@/components/ui/typography";
 import { TypographySmall } from "@/components/ui/typography";
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { projectCard } from '@/lib/animations';
 interface ProjectCardTypes {
   name: string;
   desc: string;
@@ -17,7 +19,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 const ProjectCard = ({name, desc, thumbnailSrc, demoHref, githubHref} : ProjectCardTypes) => {
   return (
-    <div className="flex flex-col overflow-hidden rounded-[6px_6px_0_0]">
+    <motion.div variants={projectCard} className="flex flex-col overflow-hidden rounded-[6px_6px_0_0]">
       <div className="relative flex-1 min-h-[20rem]">
         <Image src={`${isProd ? "/my-portfolio": ''}${thumbnailSrc}`} width={250} height={400} alt={desc} className="object-cover object-center w-full h-full"/>
         <div className="absolute inset-0 grid cursor-pointer place-items-center bg-gradient-to-r from-primary/50 to-[hsl(15_70%_49%_/50%)] opacity-0 duration-200 ease-in-out hover:opacity-100">
@@ -33,7 +35,7 @@ const ProjectCard = ({name, desc, thumbnailSrc, demoHref, githubHref} : ProjectC
           {desc}
         </TypographySmall>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

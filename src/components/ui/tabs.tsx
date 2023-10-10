@@ -4,6 +4,8 @@ import * as React from "react"
 import * as TabsPrimitive from "@radix-ui/react-tabs"
 
 import { cn } from "@/lib/utils"
+import { motion } from 'framer-motion';
+import { projectsContainer, projectsContainerVariants } from "@/lib/animations";
 
 const Tabs = TabsPrimitive.Root
 
@@ -52,9 +54,11 @@ const TabsContent = React.forwardRef<
     )}
     {...props}
   >
-    <div className="mt-6 grid grid-cols-auto-fill gap-8">
+    <motion.div variants={projectsContainer} initial='hidden' whileInView="show" transition={{
+      amount: 0.4,
+    }} className="mt-6 grid grid-cols-auto-fill gap-8">
       {children}
-      </div>
+      </motion.div>
   </TabsPrimitive.Content>
 ));
 TabsContent.displayName = TabsPrimitive.Content.displayName
