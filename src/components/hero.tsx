@@ -39,7 +39,7 @@ const Hero = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col gap-8 sm:flex-row md:max-w-[45ch] md:flex-col">
-              <p>In this digital revolution era, everyone deserves to have his/her own spot on the web. I&apos;m here to collaporate with you to make your vision true, and to make your digital spot an attractive and efficient place.</p>
+              <p>In this digital revolution era, everyone deserves to have his/her own spot on the web. I&apos;m here to collaborate with you to make your vision true, and to make your digital spot an attractive and efficient place.</p>
               <ul className="space-y-2">
                 <li className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
                   <div>

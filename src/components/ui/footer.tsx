@@ -33,7 +33,7 @@ const socials = [
 
 const Footer = () => {
   return (
-    <footer className="pt-16">
+    <footer className="pt-16 bg-gradient-to-b from-white/5 to-transparent">
       <div className="container max-w-screen-lg">
         <div className="flex flex-col gap-12 sm:flex-row sm:flex-wrap sm:justify-between">
           <div className='space-y-8 max-w-[42ch]'>

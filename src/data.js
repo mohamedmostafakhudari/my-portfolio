@@ -120,7 +120,7 @@ const experiences = [
   {
     title: "The Odin Project Full Stack Curriculum",
     bullets: [
-      "An open source community with lots of amazing collaporators of different experience levels brought together this curriculum of the brightest educational articales on the internet.",
+      "An open source community with lots of amazing collaborators of different experience levels brought together this curriculum of the brightest educational articales on the internet.",
       'It embraces the "Learn By Doing" methodology. This was the start point in my career to transition my passion for Programming from just a hobby to a professional level and a serious life-long commitment.',
     ],
     startDate: new Date(Date.UTC(2022, 1, 1)),
