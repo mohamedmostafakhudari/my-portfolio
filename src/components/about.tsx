@@ -26,12 +26,10 @@ const About = () => {
             <TypographyH2>About Me</TypographyH2>
             <p>
               Hi, I&apos;m Mohamed, a passionate and competent front-end web
-              developer based in Egypt. Being self-learn taught me to retrieve
-              my motivation to keep learning new stuff and to keep moving
-              forward from inside without seeking outside validation, as the
+              developer based in Egypt. Being self-taught gave me two critical skills every developer should have, Research and Adaptability. As the
               quote says &ldquo;wherever passion is, there you will find
-              success&rdquo;. Learning everyday and putting the work has given
-              me a great diverse skill-set in different technologies which
+              success&rdquo;, and I found my passion in this craft. In my journey I acquired
+              a great diverse skill-set in different technologies which
               allows me to provide a professional custom web development
               solutions. I believe that my work is a reflection of myself,
               therefore my philosophy is &ldquo;Quality First&rdquo;. In my free
