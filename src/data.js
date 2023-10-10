@@ -52,6 +52,13 @@ const projects = {
         githubHref: "https://github.com/mohamedmostafakhudari/keeper-app",
         demoHref: "https://mohamedmostafakhudari.github.io/keeper-app/",
       },
+      {
+        name: "my-personal-portfolio",
+        desc: "Project Desc",
+        imgSrc: "/assets/my-portfolio.png",
+        githubHref: "https://github.com/mohamedmostafakhudari/my-portfolio",
+        demoHref: "https://mohamedmostafakhudari.github.io/my-portfolio/",
+      },
     ],
   },
   clones: [
