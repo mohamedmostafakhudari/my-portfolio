@@ -2,7 +2,6 @@
 //! Remember to remove assetPrefix when deploying to vercel  !//
 const nextConfig = {
   output: "export",
-  assetPrefix: "/my-portfolio/",
   trailingSlash: true,
   images: {
     unoptimized: true,
