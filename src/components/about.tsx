@@ -55,9 +55,8 @@ const About = () => {
               technologies which allows me to provide a professional custom web
               development solutions. I believe that my work is a reflection of
               myself, therefore my philosophy is &ldquo;Quality First&rdquo;. In
-              my free time I like to do sports, reading books, you can find me
-              surfing the web, hanging out on social media, or hiding in a bush
-              in Fortnite 😁.
+              my free time I like to do sports, read books,
+              surfing the web, or hiding in a bush in Fortnite 😁.
             </p>
           </div>
           <Link
