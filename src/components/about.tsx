@@ -15,7 +15,7 @@ const About = () => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.75
+      threshold: 0.5
     };
     const observer = new IntersectionObserver((entries) => {
       const [entry] = entries;
@@ -37,7 +37,7 @@ const About = () => {
           initial="hidden"
           whileInView="show"
           viewport={{
-            amount: 0.8,
+            amount: 0.5,
             once: true,
           }}
           variants={sectionVariants}
