@@ -7,6 +7,7 @@ import { TypographySmall } from "@/components/ui/typography";
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { projectCard } from '@/lib/animations';
+import { Button } from '@/components/ui/button';
 interface ProjectCardTypes {
   name: string;
   desc: string;
@@ -29,11 +30,11 @@ const ProjectCard = ({name, desc, thumbnailSrc, demoHref, githubHref} : ProjectC
           </div>
         </div>
       </div>
-      <div className="rounded-[0_0_6px_6px] bg-white/5 p-4">
+      <div className="rounded-[0_0_6px_6px] bg-white/5 p-4 space-y-2">
         <TypographyH4>{name}</TypographyH4>
-        <TypographySmall className="text-slate-400">
-          {desc}
-        </TypographySmall>
+        <Button variant={'secondary'} size={'sm'} asChild>
+          <a href={`projects/${name}`}>Learn More</a>
+        </Button>
       </div>
     </motion.div>
   );
