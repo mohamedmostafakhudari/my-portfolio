@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { Playfair_Display } from "next/font/google";
 const playfairDisplay = Playfair_Display({ subsets: ["latin"] });
 
-export function TypographyH1({ children }: { children: React.ReactNode }) {
+export function TypographyH1({ children }: { children: string }) {
 	return (
 		<h1
 			className={cn(
@@ -14,7 +14,7 @@ export function TypographyH1({ children }: { children: React.ReactNode }) {
 	);
 }
 
-export function TypographyH2({ children }: { children: React.ReactNode }) {
+export function TypographyH2({ children }: { children: string }) {
 	return (
 		<h2
 			className={cn(
@@ -26,7 +26,7 @@ export function TypographyH2({ children }: { children: React.ReactNode }) {
 	);
 }
 
-export function TypographyH3({ children }: { children: React.ReactNode }) {
+export function TypographyH3({ children }: { children: string }) {
 	return (
 		<h3
 			className={cn(
@@ -38,7 +38,7 @@ export function TypographyH3({ children }: { children: React.ReactNode }) {
 	);
 }
 
-export function TypographyH4({ children }: { children: React.ReactNode }) {
+export function TypographyH4({ children }: { children: string }) {
 	return (
 		<h4
 			className={cn(
@@ -50,14 +50,14 @@ export function TypographyH4({ children }: { children: React.ReactNode }) {
 	);
 }
 
-export function TypographyP({ children }: { children: React.ReactNode }) {
+export function TypographyP({ children }: { children: string }) {
 	return <p className="leading-7 [&:not(:first-child)]:mt-6">{children}</p>;
 }
 
-export function TypographyLarge({ children }: { children: React.ReactNode }) {
+export function TypographyLarge({ children }: { children: string }) {
 	return <div className="text-lg font-semibold">{children}</div>;
 }
 
-export function TypographySmall({ className, children }: { className: string; children: React.ReactNode }) {
+export function TypographySmall({ className, children }: { className: string; children: string }) {
 	return <small className={cn("text-sm leading-none", className)}>{children}</small>;
 }
