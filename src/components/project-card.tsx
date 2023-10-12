@@ -22,7 +22,7 @@ const ProjectCard = ({name, desc, thumbnailSrc, demoHref, githubHref} : ProjectC
     <motion.div variants={projectCard} className="flex flex-col overflow-hidden rounded-[6px_6px_0_0]">
       <div className="relative flex-1 min-h-[20rem]">
         <Image src={`${isProd ? "/my-portfolio": ''}${thumbnailSrc}`} width={250} height={400} alt={desc} className="object-cover object-center w-full h-full"/>
-        <div className="absolute inset-0 grid cursor-pointer place-items-center bg-gradient-to-r from-primary/50 to-[hsl(15_70%_49%_/50%)] opacity-0 duration-200 ease-in-out hover:opacity-100">
+        <div className="absolute inset-0 grid place-items-center bg-gradient-to-r from-primary/50 to-[hsl(15_70%_49%_/50%)] opacity-0 duration-200 ease-in-out hover:opacity-100">
           <div className="">
             <Icon IconComp={BsEye} href={demoHref} />
             <Icon IconComp={BiCodeAlt} href={githubHref} />
