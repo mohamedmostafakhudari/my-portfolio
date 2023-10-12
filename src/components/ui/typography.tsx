@@ -43,7 +43,6 @@ export function TypographyH4({ children }: { children: string }) {
 		<h4
 			className={cn(
 				"scroll-m-20 text-xl font-semibold tracking-tight",
-				playfairDisplay.className
 			)}>
 			{children}
 		</h4>
