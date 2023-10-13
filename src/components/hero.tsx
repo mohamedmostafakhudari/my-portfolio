@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import {
   Card,
@@ -12,11 +13,17 @@ import { typingVariants } from "@/lib/animations";
 import { AiOutlineCalendar, AiOutlineHome } from "react-icons/ai";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { randomIndex } from '@/lib/utils';
-
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import Triangles from '@/components/triangles';
+import Circles from '@/components/circles';
 const Hero = () => {
-  
+
   return (
-    <section id="hero" className="bg-gradient-primary py-24 md:pt-0">
+    <section id="hero" className="relative bg-gradient-primary py-24 md:pt-0">
+        <Circles />
+        <Triangles />
+        <Triangles reverse/>
       <div className="container">
         <Card className="flex flex-col gap-6 overflow-hidden shadow-lg shadow-white/30 md:mx-0 md:translate-y-[45%] md:flex-row md:items-center md:gap-12 md:px-8">
           <div className="md:flex-1">
@@ -39,7 +46,12 @@ const Hero = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col gap-8 sm:flex-row md:max-w-[45ch] md:flex-col">
-              <p>In this digital revolution era, everyone deserves to have his/her own spot on the web. I&apos;m here to collaborate with you to build your online success, and to make your digital spot an attractive and efficient place.</p>
+              <p>
+                In this digital revolution era, everyone deserves to have
+                his/her own spot on the web. I&apos;m here to collaborate with
+                you to build your online success, and to make your digital spot
+                an attractive and efficient place.
+              </p>
               <ul className="space-y-2">
                 <li className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
                   <div>
@@ -68,13 +80,17 @@ const Hero = () => {
               </ul>
             </CardContent>
           </div>
-          <div className="md:order-0 -order-1 p-6 pb-0 md:flex-1 md:p-0">
-            <img
-              src="https://unsplash.it/500/500"
-              alt="it's me"
-              className="w-full object-cover object-center"
-            />
-          </div>
+          <motion.div
+            initial={{ y: -10 }}
+            animate={{ y: 0 }}
+            transition={{
+              damping: 100,
+              repeat: Infinity,
+              repeatType: "mirror",
+              duration: 3,
+            }}
+            className={`md:order-0 -order-1 min-h-[400px] rounded-md bg-[url('/assets/istockphoto-956073060-612x612.jpg')] bg-cover bg-center bg-no-repeat p-6 pb-0 md:flex-1 md:p-0`}
+          />
         </Card>
       </div>
     </section>
