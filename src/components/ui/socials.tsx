@@ -13,22 +13,22 @@ const socials = [
   {
     label: "Github",
     icon: FaGithub,
-    href: "#",
+    href: "https://github.com/mohamedmostafakhudari",
   },
   {
-    label: "Linkedin",
+    label: "LinkedIn",
     icon: FaLinkedinIn,
-    href: "#",
+    href: "www.linkedin.com/in/mohamedmostafakhudari",
   },
   {
     label: "Twitter",
     icon: FaXTwitter,
-    href: "#",
+    href: "https://twitter.com/MohamedM_ostafa",
   },
   {
     label: "Facebook",
     icon: FaFacebookF,
-    href: "#",
+    href: "https://www.facebook.com/profile.php?id=100093698136785",
   },
 ];
 
